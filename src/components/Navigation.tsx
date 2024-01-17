@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GiBalloonDog } from "react-icons/gi";
+import { GiAbstract050, GiBalloonDog, GiCalendar, GiCementShoes } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 import './styles/Navigation.css';
 
@@ -31,19 +31,19 @@ const Navigation = () => {
         </div>
         <div className="desktop-nav">
             <a href="#">
-                <GiBalloonDog className="desktop-link" />
+                <GiCementShoes className="desktop-link" />
             </a>
             <a href="#">
-                <GiBalloonDog className="desktop-link" />
+                <GiAbstract050 className="desktop-link" />
             </a>
             <a href="#">
-                <GiBalloonDog className="desktop-link" />
+                <GiAbstract050 className="desktop-link" />
             </a>
             <a href="#">
-                <GiBalloonDog className="desktop-link" />
+                <GiCalendar className="desktop-link" />
             </a>
             <a href="#">
-                <GiBalloonDog className="desktop-link" />
+                <GiCarrot className="desktop-link" />
             </a>
         </div>
     </>
