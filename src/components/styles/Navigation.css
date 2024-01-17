@@ -32,7 +32,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 9997;
-    top: 25vh;
+    top: 20vh;
   }
 
 .desktop-link {
@@ -42,7 +42,7 @@
     border-radius: 100%;
     color: black;
     background-color: lightgray;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .desktop-link:hover {
