@@ -23,7 +23,7 @@ const Navigation = () => {
              <div id='mobileNavItems' 
                 className={ 
                     nav 
-                    ? 'overlay-section nav-overlay fixed active' 
+                    ? 'overlay-section nav-overlay fixed active wipe-nav' 
                     : 'overlay-section nav-overlay fixed'}>
                 OVER LAY!
                 <h1>{nav}</h1>
@@ -33,7 +33,7 @@ const Navigation = () => {
             <a href="#">
                 <GiCementShoes className="desktop-link" />
             </a>
-            <a href="#">
+            <a href="#summary">
                 <GiAbstract050 className="desktop-link" />
             </a>
             <a href="#">

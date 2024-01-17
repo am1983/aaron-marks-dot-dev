@@ -15,11 +15,24 @@
     font-size: 2em;
 }
 
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
 .nav-overlay {
     background-color: white;
     z-index: 9998;
     left: -100%;
-    transition: 0.4s
+    transition: 0.4s;
+}
+
+.wipe-nav {
+    animation: wipe-enter 1s 1;
 }
 
 .active {
@@ -32,7 +45,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 9997;
-    top: 25vh;
+    top: 20vh;
   }
 
 .desktop-link {
@@ -42,7 +55,7 @@
     border-radius: 100%;
     color: black;
     background-color: lightgray;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .desktop-link:hover {
