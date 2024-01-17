@@ -1,4 +1,5 @@
 import officePic from '../assets/office.jpg';
+import './styles/Intro.css';
 
 const Intro = () => {
   return (

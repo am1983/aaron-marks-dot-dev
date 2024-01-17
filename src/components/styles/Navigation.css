@@ -1,0 +1,62 @@
+.nav-button {
+    top: 5px;
+    right: 5px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.icon:hover {
+    color: purple;
+    font-size: 2.5em;
+}
+
+.icon {
+    color: black;
+    font-size: 2em;
+}
+
+.nav-overlay {
+    background-color: white;
+    z-index: 9998;
+    left: -100%;
+    transition: 0.4s
+}
+
+.active {
+    left: 0;
+    transition: 0.4s
+}
+
+.desktop-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9997;
+    top: 25vh;
+  }
+
+.desktop-link {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 100%;
+    color: black;
+    background-color: lightgray;
+    font-size: 2.5em;
+}
+
+.desktop-link:hover {
+    color: purple;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-navigation {
+        display: none;
+    }
+}

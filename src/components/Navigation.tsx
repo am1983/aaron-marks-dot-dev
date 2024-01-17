@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiBalloonDog } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
+import './styles/Navigation.css';
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
@@ -13,22 +14,22 @@ const Navigation = () => {
 
   return (
     <>
-        <div className="hidden-md hidden-lg hidden-xl">
+        <div className="mobile-navigation">
             <div id='mobileNav' className="nav-button">
                 <a href="#" onClick={toggleNav}>
                     <IoMenu className="icon" />
                 </a>
             </div>
-            {   nav 
-                ? <div id='mobileNavItems' className="overlay-section nav-overlay fixed" hidden={nav}>
-                    OVER LAY! 
-                    <h1>{nav}</h1>
-                </div> 
-                : 
-                ''
-            }
+             <div id='mobileNavItems' 
+                className={ 
+                    nav 
+                    ? 'overlay-section nav-overlay fixed active' 
+                    : 'overlay-section nav-overlay fixed'}>
+                OVER LAY!
+                <h1>{nav}</h1>
+            </div> 
         </div>
-        <div className="desktop-nav hidden-sm">
+        <div className="desktop-nav">
             <a href="#">
                 <GiBalloonDog className="desktop-link" />
             </a>
