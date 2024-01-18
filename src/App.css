@@ -7,13 +7,13 @@ body {
   display: flex;
 }
 
-.section-content {
-  padding: 0px 80px;
-}
-
-.section-header {
-  display: inline-flex;
-  justify-content: center;
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .section-body {
@@ -23,17 +23,15 @@ body {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
+.section-content {
+  padding: 0px 90px;
+  display: flex;
+  align-self: flex-start;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: flex-start;
+.section-header {
+  display: inline-flex;
+  justify-content: center;
 }
 
 .photo {
