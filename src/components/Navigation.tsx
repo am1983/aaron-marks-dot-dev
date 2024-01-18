@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GiAbstract050, GiBalloonDog, GiCalendar, GiCarrot, GiCementShoes } from "react-icons/gi";
+import { GiAbstract050, GiCalendar, GiCarrot, GiCementShoes } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 import './styles/Navigation.css';
 
