@@ -4,7 +4,7 @@ import './styles/Intro.css';
 const Intro = () => {
   return (
     <>
-        <div className="intro section">
+        <div id="intro" className="intro section">
             <img src={officePic} className="photo" />
         </div>
         <div className="overlay-section absolute">
