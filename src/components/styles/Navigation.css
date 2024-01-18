@@ -36,6 +36,9 @@
 .nav-overlay {
     background-color: white;
     z-index: 9998;
+}
+
+.inactive {
     left: -100%;
     transition: 1s;
 }
@@ -45,12 +48,12 @@
 }
 
 .wipe-nav-exit {
-    animation: wipe-exit 1s 1;
+    animation: wipe-exit 2s 1;
 }
 
 .active {
     left: 0;
-    transition: 0.4s
+    transition: 0.4s;
 }
 
 .desktop-nav {

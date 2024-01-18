@@ -24,7 +24,7 @@ const Navigation = () => {
                 className={ 
                     nav 
                     ? 'overlay-section nav-overlay fixed active wipe-nav-enter' 
-                    : 'overlay-section nav-overlay fixed wipe-nav-exit'}>
+                    : 'overlay-section nav-overlay fixed inactive wipe-nav-exit'}>
                 OVER LAY!
                 <h1>{nav}</h1>
             </div> 
