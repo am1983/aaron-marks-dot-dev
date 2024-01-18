@@ -23,8 +23,8 @@ const Navigation = () => {
              <div id='mobileNavItems' 
                 className={ 
                     nav 
-                    ? 'overlay-section nav-overlay fixed active wipe-nav' 
-                    : 'overlay-section nav-overlay fixed'}>
+                    ? 'overlay-section nav-overlay fixed active wipe-nav-enter' 
+                    : 'overlay-section nav-overlay fixed wipe-nav-exit'}>
                 OVER LAY!
                 <h1>{nav}</h1>
             </div> 

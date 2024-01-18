@@ -24,15 +24,28 @@
 	}
 }
 
+@keyframes wipe-exit {
+	0% {
+		transform: scale(1, .025);
+	}
+	50% {
+		transform: scale(0, .025);
+	}
+}
+
 .nav-overlay {
     background-color: white;
     z-index: 9998;
     left: -100%;
-    transition: 0.4s;
+    transition: 1s;
 }
 
-.wipe-nav {
+.wipe-nav-enter {
     animation: wipe-enter 1s 1;
+}
+
+.wipe-nav-exit {
+    animation: wipe-exit 1s 1;
 }
 
 .active {
