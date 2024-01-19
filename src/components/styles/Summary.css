@@ -1,3 +1,13 @@
 .summary {
     background-color: white;
 }
+
+.description-item {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.description-title {
+    padding-bottom: 1em;
+    font-size: larger;
+}

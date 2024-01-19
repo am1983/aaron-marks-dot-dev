@@ -7,8 +7,6 @@ const Navigation = () => {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => { 
-    console.log('clicked');
-    console.log(nav);
     setNav(!nav); 
   }
 

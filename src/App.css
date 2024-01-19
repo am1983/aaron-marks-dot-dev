@@ -27,6 +27,7 @@ body {
   padding: 0px 90px;
   display: flex;
   align-self: flex-start;
+  flex-direction: column;
 }
 
 .section-header {
@@ -67,4 +68,16 @@ body {
 .overlay-header {
   font-weight: 600;
   font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    padding: 0px 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .section-content {
+    padding: 0px 90px;
+  }
 }

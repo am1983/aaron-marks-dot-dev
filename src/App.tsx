@@ -1,7 +1,7 @@
 import './App.css'
 import Intro from './components/Intro'
 import Navigation from './components/Navigation'
-import Summary from './components/Summary'
+import About from './components/About'
 import Timeline from './components/Timeline'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navigation />
       <Intro />
-      <Summary />
+      <About />
       <Timeline />
       <Timeline />
       <Timeline />
