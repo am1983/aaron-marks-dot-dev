@@ -1,7 +1,8 @@
-import TimelineItem from './TimelineItem';
 import './styles/Timeline.css';
+import TimelineItem from './TimelineItem/TimelineItem.tsx';
+import ITimelineItem from './TimelineItem/ITimelineItem.ts';
 
-const experience = [
+const experience: ITimelineItem[] = [
     {
       year: 2014,
       company: 'Kwantek',
@@ -22,9 +23,14 @@ const Timeline = () => {
             <div className="section-body">
                 <h1 className="overlay-header full-width section-header">My Experience</h1>
                 <div className="section-content">
-                    { experience.map((item, i) => (
-                      <TimelineItem item={item} key={i} />
-                    ))
+                  { 
+                    experience.map((item: ITimelineItem, i: number) => 
+                      {
+                        return (
+                          <TimelineItem timelineItem={item} key={i} />
+                        )
+                      }
+                    )
                   }
                 </div>
             </div>
