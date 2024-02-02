@@ -1,4 +1,4 @@
-name: React App Deployment # name of the workflo
+name: React App Deployment
 
 on:
   push:
